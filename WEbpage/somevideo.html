@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+</head>
+
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="index.html">Port<span>folio</span></a></div>
+            <ul class="menu">
+                <li><a href="index.html" class="menu-btn">Hjem</a></li>
+                <li><a href="index.html#about" class="menu-btn">Om mig</a></li>
+                <li><a href="index.html#work" class="menu-btn">Se værker</a></li>
+                <li><a href="index.html#portfolio" class="menu-btn">Portfolio</a></li>
+                <li><a href="index.html#bagom" class="menu-btn">Bag om arbejdet</a></li>
+                <li><a href="index.html#contact" class="menu-btn">Kontakt</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- home section start -->
+    <section class="billede" id="home">
+        <div class="max-width">
+
+
+
+            <div class="container">
+                <h1>Videogalleri</h1>
+                <div class="row">
+                    <div class="col">
+                        <div class="feature-img">
+                            <img src="images/pic1.png" width="100%">
+                            <img src="images/play.png" class="play-btn" onclick="playVideo('images/fructis30.mp4')">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="images/pic2.png">
+                                <img src="images/play.png" class="play-btn" onclick="playVideo('images/fructis15.mp4')">
+                            </div>
+                            <p>15 sekunder</p>
+
+                        </div>
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="images/pic3.png">
+                                <img src="images/play.png" class="play-btn" onclick="playVideo('images/fructis5.mp4')">
+                            </div>
+                            <p>5 sekunder</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-player" id="videoPlayer">
+                <video width="100%" controls autoplay id="myVideo">
+                    <source src="images/fuctis30.mp4" type="video/mp4">
+                </video>
+                <img src="images/close.png" class="close-btn" onclick="stopVideo()">
+                <source>
+            </div>
+
+
+            <script>
+                var videoplayer = document.getElementById("videoPlayer");
+                var myvideo = document.getElementById("myVideo");
+                function stopVideo() {
+                    videoPlayer.style.display = "none";
+
+                }
+                function playVideo(file) {
+                    myVideo.src = file;
+                    videoPlayer.style.display = "block";
+                }
+
+            </script>
+        </div>
+    </section>
+
+</body>
+
+
+
+<body>
+
+
+    <section class="work" id="work">
+        <div class="max-width">
+            <section class="portfolio" id="portfolio">
+                <div class="max-width">
+                    <!-- Tekst -->
+                    <h2 class="title">Some videoproduktion</h2>
+                    <div class="portfolio-content">
+                        <div class="column left">
+                            <div class="text">Fructis fra Garnier</div>
+                            <p>I grupper lavede vi video tilpasset de sociale medier i 30, 15 og 5 sekunder. Vi gik med
+                                shampoo fra Garnier, også kaldet Fructis og serien kaldes Hair food. Vi har også skabt
+                                en landingpage for produkt.
+                            </p>
+                            <a href="index1.html">Se landingpage her</a>
+                            <a href="bagomgarnier.html">Bag om projekt</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+    <!-- footer section start -->
+    <footer>
+        <span class="far fa-copyright"></span>
+        2021 All rights reserved.
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
